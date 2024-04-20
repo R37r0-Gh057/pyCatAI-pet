@@ -23,7 +23,7 @@ class Commenter:
         return screenshot
     
     def GenerateComment(self):
-        prompt = "this is a screnshot of my computer screen. Do your best to generate a funny comment based on what you see."
+        prompt = "this is a screnshot of my computer screen. Pretend that you are a cat and do your best to generate a funny comment based on what you see."
         screenshot = self.TakeScreenshot()
 
         self.latest_response = self.MODEL.generate_content([prompt, screenshot]).text
