@@ -1,2 +1,2 @@
 # pyCatAI-pet
-A  AI powered desktop pet written in python
+A Windows based AI powered desktop pet written in python.
