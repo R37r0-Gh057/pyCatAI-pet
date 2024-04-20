@@ -1,0 +1,5 @@
+google-generativeai
+pypiwin32
+pyttsx3
+win32api
+win32gui
