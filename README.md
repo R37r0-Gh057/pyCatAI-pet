@@ -10,7 +10,6 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 
 ![Python](https://img.shields.io/badge/python-3.11-green.svg) ![](https://shields.io/badge/python-tkinter-blue) ![](https://shields.io/badge/win32-api-blue) ![](https://shields.io/badge/google-gemini_vision-blue)
 
-## About
 > [!NOTE]
 > All of the cat sprites used in this project are not mine. They have been taken from [here](https://luizmelo.itch.io/pet-cat-pack).
 
@@ -28,10 +27,6 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 
 ## Getting started
 
-> [!IMPORTANT]  
-> Make sure that you have generated your own [Gemini API key](https://aistudio.google.com/app/apikey) and placed it in the script:
-https://github.com/R37r0-Gh057/pyCatAI-pet/blob/fa142662c4cc735ebe82a3d457dc0b3b78f78752/lib/CommentGenerator.py#L10
-
 Install [Python](https://python.org/) on your machine if you haven't already.
 
 Download this repository manually, or if you have [git](https://git-scm.com/) installed::
@@ -47,6 +42,10 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
+> [!IMPORTANT]  
+> Make sure that you have generated your own [Gemini API key](https://aistudio.google.com/app/apikey) and placed it in the script:
+https://github.com/R37r0-Gh057/pyCatAI-pet/blob/fa142662c4cc735ebe82a3d457dc0b3b78f78752/lib/CommentGenerator.py#L10
 
 Run the `main.py` file from terminal:
 ```
