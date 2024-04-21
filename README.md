@@ -20,10 +20,10 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 * Uses [pyttsx3](https://pypi.org/project/pyttsx3/) library for Text-to-speech.
 * Uses [Google's Gemini Vision](https://blog.google/technology/ai/google-gemini-ai/#sundar-note) model for generating comments.
 ### To do:
-* Add support for linux.
-* Add better TTS.
-* Make the sprite draggable using mouse.
-* Make the sprite stick on other program window borders.
+- [ ] Add support for linux.
+- [ ] Add better TTS.
+- [ ] Make the sprite draggable using mouse.
+- [ ] Make the sprite stick on other program window borders.
 
 # Getting started
 
