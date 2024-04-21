@@ -31,7 +31,8 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 > Make sure to [generate your own Gemini API key](https://aistudio.google.com/app/apikey) and place it in this file here:
 https://github.com/R37r0-Gh057/pyCatAI-pet/blob/fa142662c4cc735ebe82a3d457dc0b3b78f78752/lib/CommentGenerator.py#L10
 
-Now download and extract this repository manually or run the following commands if you have git installed:
+# Installation
+Download and extract this repository manually or run the following commands if you have git installed:
 
 `git clone https://github.com/R37r0-Gh057/pyCatAI-pet`
 
