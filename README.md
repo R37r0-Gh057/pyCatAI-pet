@@ -35,9 +35,8 @@ Download this repository manually, or if you have [git](https://git-scm.com/) in
 git clone https://github.com/R37r0-Gh057/pyCatAI-pet
 
 ```
-Open your terminal enter the following commands to install the necessary libraries:
+Once inside the directory, open your terminal enter the following commands to install the necessary libraries:
 ```
-cd pyCatAI-pet
 pip install -r requirements.txt
 ```
 
