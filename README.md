@@ -14,11 +14,16 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 > [!NOTE]
 > All of the cat sprites used in this project are not mine. They have been taken from [here](https://luizmelo.itch.io/pet-cat-pack).
 
-Current Features:
+### Current Features:
 * Uses [tkinter](https://docs.python.org/3/library/tkinter.html) to display sprite images and text on screen.
 * Uses [win32gui](https://pypi.org/project/win32gui/) library to access and utitlize the [Windows API](https://learn.microsoft.com/en-us/windows/win32/api/) to get the active program windows and their X, Y positions.
 * Uses [pyttsx3](https://pypi.org/project/pyttsx3/) library for Text-to-speech.
 * Uses [Google's Gemini Vision](https://blog.google/technology/ai/google-gemini-ai/#sundar-note) model for generating comments.
+### To do:
+* Add support for linux.
+* Add better TTS.
+* Make the sprite draggable using mouse.
+* Make the sprite stick on other program window borders.
 
 # Getting started
 
