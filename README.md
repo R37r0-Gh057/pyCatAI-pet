@@ -22,6 +22,7 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 ### To do:
 - [ ] Add support for linux.
 - [ ] Add better TTS.
+- [ ] Add & use more idle animations.
 - [ ] Make the sprite draggable using mouse.
 - [ ] Make the sprite stick on other program window borders.
 
