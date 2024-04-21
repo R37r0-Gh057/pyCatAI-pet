@@ -1,4 +1,4 @@
-# pyCatAI-pet
+# pyCatAI-pet (v0.9)
 A Windows based AI powered desktop pet written in [Python](https://python.org/). It can move around on your screen and jump on top of active program windows. And with the help of [Google's Gemini Vision model](https://blog.google/technology/ai/google-gemini-ai/#sundar-note), it can generate funny comments on current on-screen activity by taking screenshots of your screen every minute.
 
 [Watch video demo here](https://youtu.be/Ep7Un8vAwbI)
