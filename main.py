@@ -1,11 +1,11 @@
 from tkinter import Tk, Toplevel
 from datetime import datetime
-from lib import SpriteHandler
+import lib.SpriteHandler
 
 class Display:
     def __init__(self) -> None:
         self.ConfigureTk()
-        self.sprite_controller = SpriteHandler.SpriteController(self.root, self.chat_window)
+        self.sprite_controller = lib.SpriteHandler.SpriteController(self.root, self.chat_window)
 
     def ConfigureTk(self):
         self.root = Tk()
