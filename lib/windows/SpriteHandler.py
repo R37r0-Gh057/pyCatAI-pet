@@ -5,8 +5,8 @@ from time import time
 from PIL import Image, ImageTk
 from tkinter import Label
 
-from lib.WindowHandler import Handler
-from lib.CommentGenerator import Commenter
+from lib.windows.WindowHandler import Handler
+from lib.windows.CommentGenerator import Commenter
 
 
 class SpriteController:
