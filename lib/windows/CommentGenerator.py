@@ -14,7 +14,7 @@ class Commenter:
     
     def Configure(self):
         genai.configure(api_key=self.API_KEY)
-        model = genai.GenerativeModel("gemini-pro-vision")
+        model = genai.GenerativeModel("gemini-2.5-flash")
 
         return model
     
@@ -23,7 +23,7 @@ class Commenter:
         return screenshot
     
     def GenerateComment(self):
-        prompt = "this is a screnshot of my Windows computer screen. Pretend that you are a cat and do your best to generate a funny comment based on whatever you see me doing."
+        prompt = "this is a screnshot of my Desktop computer screen. Pretend that you are a cat and do your best to generate a funny comment based on whatever you see me doing."
         screenshot = self.TakeScreenshot()
 
         self.latest_response = self.MODEL.generate_content([prompt, screenshot]).text
@@ -32,7 +32,7 @@ class Commenter:
     
     def ThreadedSpeaker(self):
         _ = Thread(target=self.SpeakComment)
-        _.run()
+        _.start()
 
     def SpeakComment(self):
         tts = pyttsx3.init()
