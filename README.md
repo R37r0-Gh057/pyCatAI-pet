@@ -19,7 +19,7 @@ A Windows based AI powered desktop pet written in [Python](https://python.org/).
 * Uses [pyttsx3](https://pypi.org/project/pyttsx3/) library for Text-to-speech.
 * Uses [Google's Gemini Vision](https://blog.google/technology/ai/google-gemini-ai/#sundar-note) model for generating comments.
 ### To do:
-- [ ] Add support for linux.
+- [x] Add support for linux.
 - [ ] Add better TTS.
 - [ ] Add & use more idle animations.
 - [ ] Make the sprite draggable using mouse.
@@ -40,8 +40,36 @@ Once inside the directory, open your terminal enter the following commands to in
 pip install -r requirements.txt
 ```
 
-## Usage
+## Reqirements for Linux version
 
+System Packages (Install with pacman or your distro’s equivalent):
+
+```
+xdotool
+
+wmctrl
+
+qt5-tools
+
+xorg-xrandr
+
+scrot
+
+ffmpeg
+
+tk
+```
+
+Python Packages (install with pip):
+```
+pillow
+
+google-generativeai
+
+edge-tts
+```
+
+## Usage
 > [!IMPORTANT]  
 > Make sure that you have generated your own [Gemini API key](https://aistudio.google.com/app/apikey) and placed it in the script:
 https://github.com/R37r0-Gh057/pyCatAI-pet/blob/fa142662c4cc735ebe82a3d457dc0b3b78f78752/lib/CommentGenerator.py#L10
@@ -67,21 +95,3 @@ You can get started by checking the [currently open issues](https://github.com/R
 ## Contact
 
 Feel free to reach out to me on discord: @retr0_gh0st
-
-## Reqirements for Linux version
-
-System Packages (Install with pacman or your distro’s equivalent)
-
-xdotool
-wmctrl
-qt5-tools
-xorg-xrandr
-scrot
-ffmpeg
-tk
-
-Python Packages (install with pip)
-
-pillow
-google-generativeai
-edge-tts
