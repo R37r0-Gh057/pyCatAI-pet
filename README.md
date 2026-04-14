@@ -67,3 +67,21 @@ You can get started by checking the [currently open issues](https://github.com/R
 ## Contact
 
 Feel free to reach out to me on discord: @retr0_gh0st
+
+## Reqirements for Linux version
+
+System Packages (Install with pacman or your distro’s equivalent)
+
+xdotool
+wmctrl
+qt5-tools
+xorg-xrandr
+scrot
+ffmpeg
+tk
+
+Python Packages (install with pip)
+
+pillow
+google-generativeai
+edge-tts

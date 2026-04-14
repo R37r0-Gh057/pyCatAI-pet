@@ -5,8 +5,8 @@ from time import time
 from PIL import Image, ImageTk
 from tkinter import Label
 
-from lib.WindowHandler import Handler
-from lib.CommentGenerator import Commenter
+from lib.linux.Window_handler import Handler
+from lib.linux.CommentGenerator import Commenter
 
 
 class SpriteController:
@@ -148,32 +148,34 @@ class SpriteController:
             self.jumped_to_window = False
 
     def CheckFallWindow(self):
-        if self.fall:
+        if self.fall or not self.jumped_to_window:
             return
-        if not self.jumped_to_window:
-            return
-        
-        new_fg_window_location = Handler.GetForegroundWindowPosition()
 
-        if new_fg_window_location:
-            if self.target_x != new_fg_window_location[0] and self.target_y != new_fg_window_location[1]:
-                
-                self.fall = True
-                
-                self.moving = False
-                self.chat = False
-                self.SetAnimation("fall")
+        new_fg_window_location = Handler.GetForegroundWindowPosition()
+        if not new_fg_window_location:
+            return
+
+        left, top, *_ = new_fg_window_location
+
+        if self.target_x != left or self.target_y != top:
+            self.fall = True
+            self.moving = False
+            self.chat = False
+            self.SetAnimation("fall")
+
 
     def SetTargetWindow(self):
-        target_window_location = Handler.GetForegroundWindowPosition()
-        
-        if target_window_location:
-            self.target_x     = target_window_location[0]
-            self.target_y     = target_window_location[1]
-            self.target_x_max = target_window_location[2]
-            return True
-        else:
+        pos = Handler.GetForegroundWindowPosition()
+        if not pos:
             return False
+
+        left, top, right, *_ = pos
+
+        self.target_x = left
+        self.target_y = top
+        self.target_x_max = right
+
+        return True
 
     def MakeJump(self):
         if self.jumping:
